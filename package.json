@@ -1,0 +1,17 @@
+{
+    "name": "openai",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run setup:server",
+        "setup:app": "npm run setup:server && npm run setup:client",
+        "setup:client": "cd openai.client && npm i",
+        "setup:server": "cd openai && npm i",
+        "start": "node openai/index.js"
+    },
+    "engines": {
+        "node": "^18.12.1"
+    },
+    "dependencies": {
+        "openai": "^3.1.0"
+    }
+}
